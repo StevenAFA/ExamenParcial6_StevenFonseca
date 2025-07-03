@@ -1,6 +1,6 @@
 # ExamenParcial6_StevenFonseca
 
-## De que trata es
+## De que trata
 Este sistema es un To-Do list que te dice si ya finalizaste o no una tarea, mostrando tus tareas, creando estas o bien eliminarlas y editarlas.
 
 ## Herramientas
