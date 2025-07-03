@@ -45,4 +45,8 @@ Debes de levantar tanto el Swagger (Visual Studio 2022), como Angular (Visual St
    ![Creacion de tareas](https://github.com/user-attachments/assets/b4f32a35-c5eb-4922-83cd-c23c3aba3f9a)
    ![Eliminar 1](https://github.com/user-attachments/assets/4dd52c82-e1f4-4eb9-a071-5aed2ed220fe)
    ![Eliminar 2](https://github.com/user-attachments/assets/0b45bb21-b15e-4362-8ed1-a26d76dfabdd)
-  
+   ![Editar](https://github.com/user-attachments/assets/42dc89d1-8fcc-4fe2-9394-d744a05cbffa)
+   ![Editar2](https://github.com/user-attachments/assets/e6b0ac03-6278-4102-84ab-d753c707b617)
+   ![Editar3](https://github.com/user-attachments/assets/41079cb7-c590-4f36-9e9e-c64cbf1794c7)
+   ![Editar4](https://github.com/user-attachments/assets/e0e31931-a869-4712-8ff5-426830f41cc9)
+
