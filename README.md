@@ -1,9 +1,9 @@
 # ExamenParcial6_StevenFonseca
 
-##De que trata es
+## De que trata es
 Este sistema es un To-Do list que te dice si ya finalizaste o no una tarea, mostrando tus tareas, creando estas o bien eliminarlas y editarlas.
 
-##Herramientas
+## Herramientas
 1. Se utilizo Visual Studio 2022 como motor para el backend
 2. Se utilizo Visual Studio Code como motor para el frontend
 3. Se utilizo como lenguaje de programación C# para el backend
