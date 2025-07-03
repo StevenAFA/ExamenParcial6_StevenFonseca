@@ -21,17 +21,21 @@ Este sistema es un To-Do list que te dice si ya finalizaste o no una tarea, most
    git clone (https://github.com/StevenAFA/ExamenParcial6_StevenFonseca)
    
 2. Entra al directorio
+    ```bash
     cd proyecto
    
-4. Instala las dependencias
+3.  Instala las dependencias
+     ```bash
      npm install
 
-5. Instala las migraciones de EF
+4. Instala las migraciones de EF
 
-6. Verifica que todos los componentes de Angular esten
+5. Verifica que todos los componentes de Angular esten
 
-7. Compila
-    Abre http://localhost:3000 para ver la app en acción.
+6. Compila
+   ```bash
+    Abre http://localhost:7082 para ver la el swagger
+    Abre http://localhost:4200/ para ver el Angular
    
 ##Importante
 Debes de levantar tanto el Swagger (Visual Studio 2022), como Angular (Visual Studio Code), si no levantas el swagger no podras ver tus datos en la tabla.
