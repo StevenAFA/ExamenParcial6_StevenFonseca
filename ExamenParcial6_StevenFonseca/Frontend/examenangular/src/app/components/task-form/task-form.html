@@ -1,0 +1,46 @@
+<h2>Crear Nueva Tarea</h2>
+
+<form (ngSubmit)="crearTarea()" class="d-flex flex-column gap-3">
+
+  <!-- Título -->
+  <mat-form-field appearance="outline">
+    <mat-label>Título</mat-label>
+    <input matInput type="text" [(ngModel)]="nuevaTarea.titulo" name="titulo" required />
+  </mat-form-field>
+
+  <!-- Descripción -->
+  <mat-form-field appearance="outline">
+    <mat-label>Descripción</mat-label>
+    <textarea matInput [(ngModel)]="nuevaTarea.descripcion" name="descripcion" rows="3"></textarea>
+  </mat-form-field>
+
+  <!-- Fecha Límite -->
+  <mat-form-field appearance="outline">
+    <mat-label>Fecha Límite</mat-label>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="nuevaTarea.fechaLimite" name="fechaLimite" required />
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <!-- Prioridad -->
+  <mat-form-field appearance="outline">
+    <mat-label>Prioridad</mat-label>
+    <mat-select [(ngModel)]="nuevaTarea.prioridad" name="prioridad">
+      <mat-option [value]="1">Alta</mat-option>
+      <mat-option [value]="2">Media</mat-option>
+      <mat-option [value]="3">Baja</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <!-- Botones -->
+  <div class="d-flex gap-2">
+    <button mat-raised-button color="primary" type="submit" *ngIf="nuevaTarea.id === 0">
+      <mat-icon>add_circle</mat-icon>
+      Crear
+    </button>
+    <button mat-raised-button color="accent" type="button" (click)="actualizarTarea()" *ngIf="nuevaTarea.id !== 0">
+      <mat-icon>save</mat-icon>
+      Actualizar
+    </button>
+  </div>
+</form>

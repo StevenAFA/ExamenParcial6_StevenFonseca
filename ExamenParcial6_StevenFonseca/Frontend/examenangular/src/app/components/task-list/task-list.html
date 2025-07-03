@@ -1,0 +1,38 @@
+<div class="d-flex flex-wrap gap-3 justify-content-start">
+  <mat-card *ngFor="let tarea of tareas" style="width: 300px;">
+    <mat-card-header>
+      <mat-card-title>{{ tarea.titulo }}</mat-card-title>
+      <mat-card-subtitle>
+        Fecha límite: {{ tarea.fechaLimite | date: 'shortDate' }}
+      </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>{{ tarea.descripcion }}</p>
+      <p><strong>Prioridad:</strong> {{ tarea.prioridad }}</p>
+      <p><strong>Completada:</strong> {{ tarea.completada ? 'Sí' : 'No' }}</p>
+    </mat-card-content>
+
+    <mat-card-actions class="d-flex flex-wrap justify-content-end gap-2">
+      <button mat-raised-button color="accent" (click)="seleccionarParaEditar(tarea)">
+        <mat-icon>edit</mat-icon>
+        Editar
+      </button>
+
+      <button *ngIf="!tarea.completada" mat-raised-button color="primary" (click)="marcarComoCompletada(tarea)">
+        <mat-icon>check_circle</mat-icon>
+        Completar
+      </button>
+
+      <button *ngIf="tarea.completada" mat-raised-button color="accent" (click)="marcarComoNoCompletada(tarea)">
+        <mat-icon>cancel</mat-icon>
+        No completada
+      </button>
+
+      <button mat-raised-button color="warn" (click)="eliminarTarea(tarea)">
+        <mat-icon>delete_forever</mat-icon>
+        Eliminar
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

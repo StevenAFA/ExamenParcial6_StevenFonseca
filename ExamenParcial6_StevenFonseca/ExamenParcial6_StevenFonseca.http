@@ -1,0 +1,6 @@
+@ExamenParcial6_StevenFonseca_HostAddress = http://localhost:5169
+
+GET {{ExamenParcial6_StevenFonseca_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
