@@ -28,6 +28,12 @@ jobs:
       working-directory: ./ExamenParcial6_StevenFonseca/Frontend/examenangular
       run: npm run build -- --configuration=production
 
+    - name: 🚀 Deploy Angular to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./ExamenParcial6_StevenFonseca/Frontend/examenangular/dist/examenangular
+
     # BACKEND - .NET
     - name: ⚙️ Configurar .NET
       uses: actions/setup-dotnet@v3
