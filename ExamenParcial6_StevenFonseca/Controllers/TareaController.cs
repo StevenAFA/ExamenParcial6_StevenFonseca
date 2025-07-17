@@ -41,7 +41,7 @@ namespace ExamenParcial6_StevenFonseca.Controllers
         public async Task<IActionResult> PutTarea(int id, Tarea tarea)
         {
             if (id != tarea.Id)
-                return BadRequest();
+                return BadRequest() //falta ;
 
             _context.Entry(tarea).State = EntityState.Modified;
 
