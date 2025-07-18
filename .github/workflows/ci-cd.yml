@@ -32,8 +32,10 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.PAT_TOKEN }}
-        publish_dir: ./ExamenParcial6_StevenFonseca/Frontend/examenangular/browser/examenangular
+        publish_dir: ./ExamenParcial6_StevenFonseca/Frontend/examenangular/dir/examenangular
+        publish_branch: gh-pages
 
+      
     # BACKEND - .NET
     - name: ⚙️ Configurar .NET
       uses: actions/setup-dotnet@v3
