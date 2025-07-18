@@ -26,7 +26,7 @@ jobs:
 
     - name: 🛠️ Compilar Angular
       working-directory: ./ExamenParcial6_StevenFonseca/Frontend/examenangular
-      run: npm run build -- --configuration=production
+      run: npm run build -- --configuration=production --base-href /ExamenParcial6_StevenFonseca/
 
     - name: 🚀 Deploy Angular to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
